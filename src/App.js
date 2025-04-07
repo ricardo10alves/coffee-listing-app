@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import CoffeeList from "./components/CoffeeList";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [showAvailableOnly, setShowAvailableOnly] = useState(false); // State to control filtering
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app-container">
+      <div className="header">
+        <h1>Our Collection</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Introducing our Coffee Collection, a selection of unique coffees from different origins, expertly roasted for every taste.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="controls">
+          {/* Filter buttons to switch between all and available-only products */}
+          <button
+            className={!showAvailableOnly ? "active" : ""}
+            onClick={() => setShowAvailableOnly(false)}
+          >
+            All Products
+          </button>
+          <button
+            className={showAvailableOnly ? "active" : ""}
+            onClick={() => setShowAvailableOnly(true)}
+          >
+            Available Only
+          </button>
+        </div>
+      </div>
+      <CoffeeList showAvailableOnly={showAvailableOnly} />
     </div>
   );
-}
+};
 
 export default App;
