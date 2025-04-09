@@ -31,15 +31,15 @@ To run this project locally, follow these steps:
    
 3. Install dependencies
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 4. Run the application
 
-```bash
-npm start
-```
+   ```bash
+   npm start
+   ```
 
 ## License
 
