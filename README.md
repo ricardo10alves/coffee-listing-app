@@ -28,14 +28,14 @@ To run this project locally, follow these steps:
    ```bash
    cd coffee-listing-app
    ```
-
-### 3. Install dependencies
+   
+3. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Run the application
+4. Run the application
 
 ```bash
 npm start
