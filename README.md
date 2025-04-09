@@ -21,12 +21,26 @@ To run this project locally, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/simple-coffee-listing.git
+   git clone https://github.com/yourusername/coffee-listing-app
    ```
    
 2. Navigate to the project directory
    ```bash
-   cd simple-coffee-listing
+   cd coffee-listing-app
    ```
-   
-3. Open the ```index.html``` file in your web browser to view the project.
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Run the application
+
+```bash
+npm start
+```
+
+## License
+
+This project is licensed under the MIT License.
