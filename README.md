@@ -1,4 +1,4 @@
-# Simple Coffee Listing
+# Coffee Listing
 
 This is a simple application where users can explore a collection of coffee products. The app displays detailed information about each coffee, including an image, description, price, and whether it is available or out of stock. The user can filter the coffee list to view all products or only the available ones. Each coffee has a rating and the number of votes it has received, displayed with a star rating system.
 
